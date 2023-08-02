@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-127dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autism Assessment app"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social interaction"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/response1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child respond to his/her name?Yes"/>
+
+            <CheckBox
+                android:id="@+id/response1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child struggle to make eye contact during conversations?No"/>
+
+            <CheckBox
+                android:id="@+id/response1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child find it challenging to initiate or maintain conversations with peers?Yes"/>
+
+            <CheckBox
+                android:id="@+id/response1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child have difficulty understanding and responding appropriately to social cues?No
+        "/>
+
+
+            <TextView
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communication"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/response2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child have delayed speech or difficulty expressing his needs and wants?No"/>
+
+            <CheckBox
+                android:id="@+id/response2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child exhibit echolalia (repeating words or phrases) or uses unusual language
+        patterns?No"/>
+
+            <CheckBox
+                android:id="@+id/response2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child have difficulty understanding and using nonverbal communication, such as
+        gestures or facial expressions?Yes
+        "/>
+
+
+
+            <TextView
+                android:id="@+id/category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repetitive behaviours/Interest"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/response3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child engage in repetitive movements like hand-flapping, spinning or rocking?Yes"/>
+
+            <CheckBox
+                android:id="@+id/response3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child have intense or fixated interest in specific objects or topics?No"/>
+
+            <CheckBox
+                android:id="@+id/response3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child follow rigid routines and becomes upset with changes in their daily schedule?No"/>
+
+            <CheckBox
+                android:id="@+id/response3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child interact with toys or objects in unexpected ways?Yes"/>
+
+            <TextView
+                android:id="@+id/category4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensory sensitivity"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/response4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child display heightened sensitivity to loud noises, bright lights or specific textures?No"/>
+
+            <CheckBox
+                android:id="@+id/response4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child seek or avoid certain sensory experiences such as seeking deep pressure or
+        avoiding certain food textures?Yes
+        "/>
+
+            <TextView
+                android:id="@+id/category5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Executive functions"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/response5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child have difficulty with organization and planning tasks or managing time
+        effectively?No"/>
+
+            <CheckBox
+                android:id="@+id/response5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does your child struggle with transitions between activities or changes in routine?"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitButton"
+                android:text="Submit"
+                android:onClick="submitAssessment"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
